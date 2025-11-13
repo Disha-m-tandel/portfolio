@@ -1,0 +1,47 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.home-image{
+    width: 20vw;
+    height: 40vh;
+    border-radius: 50%;
+    color: white;
+    background-color: violet;
+    margin-right: 6rem;
+}
+
+.profile{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin-left: 6rem;
+}
+
+@media (max-width: 768px) {
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .home-image{
+    width: 68vw;
+    height: 15vh;
+    border-radius: 50%;
+    color: white;
+    background-color: violet;
+    margin-right: 0;
+    margin-top: 1rem;
+}
+
+.profile{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin-left: 0rem;
+}
+}

@@ -1,0 +1,15 @@
+<nav class="navbar">
+<div class="logo">My Portfolio 💜</div>
+
+<div class="menu-icon" (click)="toggleMenu()">
+   <i class="fa-solid fa-bars"></i>
+  </div>
+  <ul [class.active]="menuOpen">
+   <li><a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+    <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+    <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
+    <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
+    <li><a routerLink="/education & experience" routerLinkActive="active">Education and Experience</a></li>
+  </ul>
+</nav>
+

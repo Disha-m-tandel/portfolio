@@ -1,0 +1,37 @@
+<!-- <div class="skills">
+    <div class="card">
+        <h2>Frontend skills</h2>
+        <div class="card-content">
+            <span>Angular</span>
+            <span>HTML5</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+        </div>
+    </div>
+    <div class="card">
+        <h2>Tools</h2>
+        <div class="card-content">
+            <span>Git & GitHub</span>
+            <span>VS Code</span>
+            <span>Postman</span>
+            <span>Jira</span>
+            <span>TypeScript</span>
+        </div>
+    </div>
+</div> -->
+
+<div class="skills">
+
+  <div class="accordion-item" (click)="toggle(0)">
+    <h3>Technical Skills</h3>
+    <div class="content" [class.show]="openIndex === 0">
+      <p><strong>Languages:</strong> HTML5, CSS, JavaScript, TypeScript</p>
+      <p><strong>Frontend Frameworks:</strong> Angular</p>
+      <p><strong>Version Control:</strong> GitLab, GitHub</p>
+      <p><strong>Testing Tools:</strong> Postman, JMeter, Selenium (basic)</p>
+      <p><strong>Other:</strong> REST API Integration, Responsive Design, Agile (Jira)</p>
+    </div>
+  </div>
+
+</div>
