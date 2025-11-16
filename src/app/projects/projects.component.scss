@@ -1,0 +1,42 @@
+.details {
+  display: flex;
+  margin-left: 2rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  gap: 1rem;
+  text-align: left;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+h3:active {
+  margin: 0.6rem 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  max-width: max-content;
+}
+
+li {
+  line-height: 1.5rem;
+}
+
+.design {
+  padding-bottom: 5px;
+  border-bottom: 0px solid transparent; /* hidden by default */
+  text-decoration: none;
+  transition: 0.3s ease;
+  color: #e3f2fd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.design.active {
+  color: #e3f2fd;
+  border-bottom: 0.2rem solid #c292f1;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.design:hover {
+  color: #c084fc;
+}

@@ -1,0 +1,22 @@
+<div class="projects">
+    <div>
+        <div class="projects-1" (click)="onOpenMyCloudCam()">
+            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisible}">
+            <h4>BigBasket Application</h4>
+        </div>
+        <div *ngIf="isVisible" (click)="onCloseMyCloudCam()" class="description">
+            A responsive BigBasket UI clone featuring product categories, 
+            item cards, and a modern layout that recreates a realistic shopping interface.
+        </div>
+    </div>
+    <div>
+        <div class="projects-1" (click)="onOpenDrrived()">
+            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleDrrived}">
+            <h4>Amazon Design</h4>
+        </div>
+        <div *ngIf="isVisibleDrrived" (click)="onCloseDrrived()" class="description">
+            A clean and responsive Amazon homepage design with hero banners, 
+            product grids, and an intuitive shopping-style layout.
+        </div>
+    </div>
+</div>

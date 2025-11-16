@@ -1,0 +1,14 @@
+<div class="contact-container">
+  <h2>Contact Me</h2>
+
+  <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+
+    <input type="text" formControlName="name" placeholder="Enter your name" required>
+
+    <input type="email" formControlName="email" placeholder="Enter your email" required>
+
+    <textarea formControlName="message" rows="4" placeholder="Enter your message" required></textarea>
+
+    <button type="submit" [disabled]="contactForm.invalid">Send Message</button>
+  </form>
+</div>

@@ -1,0 +1,32 @@
+<div class="projects">
+    <div>
+        <div class="projects-1" (click)="onOpenMyCloudCam()">
+            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisible}">
+            <h4>Tic-Tac-Toe</h4>
+        </div>
+        <div *ngIf="isVisible" (click)="onCloseMyCloudCam()" class="description">
+            A simple two-player Tic-Tac-Toe game with win detection, draw logic, and instant reset. 
+            Built with a clean UI and interactive gameplay.
+        </div>
+    </div>
+    <div>
+        <div class="projects-1" (click)="onOpenDrrived()">
+            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleDrrived}">
+            <h4>Stone–Paper–Scissor</h4>
+        </div>
+        <div *ngIf="isVisibleDrrived" (click)="onCloseDrrived()" class="description">
+            A fun game where the user plays against the computer, 
+            featuring real-time result calculation and smooth UI interactions.
+        </div>
+    </div>
+    <div>
+       <div class="projects-1" (click)="onOpenAdflex()"> 
+            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleAdflex}">
+            <h4>To-Do List</h4>
+       </div>
+        <div *ngIf="isVisibleAdflex" (click)="onCloseAdflex()" class="description">
+            A lightweight task manager that allows users to add, edit, delete, 
+            and store tasks using LocalStorage for persistent data.
+        </div>
+    </div>
+</div>

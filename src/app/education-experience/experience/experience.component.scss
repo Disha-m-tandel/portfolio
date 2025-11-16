@@ -1,0 +1,30 @@
+.experience{
+    color: #000000b5;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+ul{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    line-height: 2;
+    font-size: 1rem;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+ .experience{
+    margin-bottom: 0.2rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+ }
+
+ ul{
+    margin-left: 1rem;
+    padding: 0
+ }
+  
+}

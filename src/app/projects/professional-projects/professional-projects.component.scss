@@ -1,0 +1,41 @@
+.projects{
+    cursor: pointer;
+}
+
+.projects-1{
+    display : flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+h4{
+    margin: 0;
+}
+
+.project-image{
+    width: 1rem;
+    height: 1rem;
+    transition: transform 0.1s ease;
+    filter: brightness(0) invert(1);
+}
+
+.rotate{
+  transform: rotate(180deg);
+}
+
+.description{
+    margin-left: 3.5rem;
+    margin-top: 0.5rem;
+    margin-right: 3.5rem;
+    text-align: left;
+    color: #161515;
+    width: fit-content;
+    height: fit-content;
+    background-color: #c7c3c3;
+    border-radius: 0.5rem;
+    padding : 0.5rem;
+    opacity: 0.7;
+}

@@ -7,6 +7,11 @@
     flex-wrap: wrap;
 }
 
+img{
+    width: 2rem;
+    height: 2rem;
+}
+
 .home-image{
     width: 20vw;
     height: 40vh;
@@ -20,6 +25,42 @@
     color: white;
     font-family: "Poppins", sans-serif;
     margin-left: 6rem;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+button{
+     color: white;   /* text color */
+  background: linear-gradient(45deg, #8b5cf6, #6366f1); /* purple gradient */
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.button{
+     color: white;   /* text color */
+  background: linear-gradient(45deg, #8b5cf6, #6366f1); /* purple gradient */
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 @media (max-width: 768px) {
