@@ -13,7 +13,19 @@ export class MiniProjectsComponent {
 isVisible: boolean = false;
   isVisibleDrrived: boolean = false;
   isVisibleAdflex: any;
+  isVisibleMyPortfolio: boolean = false;
 constructor(){
+}
+
+
+onOpenMyPortfolio(){
+  this.isVisibleMyPortfolio = !this.isVisibleMyPortfolio;
+  console.log(this.isVisibleMyPortfolio);
+}
+ 
+onCloseMyPortfolio(){
+  this.isVisibleMyPortfolio = false;
+  console.log(this.isVisibleMyPortfolio);
 }
 
 onOpenMyCloudCam(){

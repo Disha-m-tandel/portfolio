@@ -1,7 +1,7 @@
 <div class="projects">
     <div>
         <div class="projects-1" (click)="onOpenMyCloudCam()">
-            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisible}">
+            <img src="../assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisible}">
             <h4>BigBasket Application</h4>
         </div>
         <div *ngIf="isVisible" (click)="onCloseMyCloudCam()" class="description">
@@ -11,7 +11,7 @@
     </div>
     <div>
         <div class="projects-1" (click)="onOpenDrrived()">
-            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleDrrived}">
+            <img src="../assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleDrrived}">
             <h4>Amazon Design</h4>
         </div>
         <div *ngIf="isVisibleDrrived" (click)="onCloseDrrived()" class="description">

@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     flex-wrap: wrap;
 }
 
@@ -14,11 +14,9 @@ img{
 
 .home-image{
     width: 20vw;
-    height: 40vh;
+    height: 51vh;
     border-radius: 50%;
-    color: white;
-    background-color: violet;
-    margin-right: 6rem;
+    margin-right: 10rem;
 }
 
 .profile{
@@ -63,6 +61,14 @@ button:hover {
   opacity: 0.9;
 }
 
+img:hover {
+  transform: scale(1.2);
+  opacity: 0.9;
+}
+
+
+
+
 @media (max-width: 768px) {
     .home{
         display: flex;
@@ -71,8 +77,8 @@ button:hover {
         margin-top: 1rem;
     }
     .home-image{
-    width: 68vw;
-    height: 15vh;
+    width: 30vw;
+    height: 65vh;
     border-radius: 50%;
     color: white;
     background-color: violet;

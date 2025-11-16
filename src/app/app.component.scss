@@ -1,5 +1,5 @@
 .background-gradient {
-  background-color: rgb(80, 46, 80);
+  
   z-index: -1; /* send it behind the router-outlet */
   filter: blur(0.09rem);
   position: fixed;
@@ -11,7 +11,7 @@
   z-index: -1;
   pointer-events: none;
   background-attachment: fixed;
-  background: transparent url(/assets/images/background-image.jpg) repeat-y center top;
+  background-image: url("../assets/images/background-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;                 
