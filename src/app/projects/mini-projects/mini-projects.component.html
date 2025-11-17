@@ -1,7 +1,7 @@
 <div class="projects">
      <div>
         <div class="projects-1" (click)="onOpenMyPortfolio()">
-            <img src="../assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleMyPortfolio}">
+            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleMyPortfolio}">
             <h4>My-portfolio</h4>
         </div>
         <div *ngIf="isVisibleMyPortfolio" (click)="onCloseMyPortfolio()" class="description">
@@ -11,7 +11,7 @@
     </div>
     <div>
         <div class="projects-1" (click)="onOpenMyCloudCam()">
-            <img src="../assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisible}">
+            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisible}">
             <h4>Tic-Tac-Toe</h4>
         </div>
         <div *ngIf="isVisible" (click)="onCloseMyCloudCam()" class="description">
@@ -20,7 +20,7 @@
     </div>
     <div>
         <div class="projects-1" (click)="onOpenDrrived()">
-            <img src="../assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleDrrived}">
+            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleDrrived}">
             <h4>Stone–Paper–Scissor</h4>
         </div>
         <div *ngIf="isVisibleDrrived" (click)="onCloseDrrived()" class="description">
@@ -30,7 +30,7 @@
     </div>
     <div>
        <div class="projects-1" (click)="onOpenAdflex()"> 
-            <img src="../assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleAdflex}">
+            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleAdflex}">
             <h4>To-Do List</h4>
        </div>
         <div *ngIf="isVisibleAdflex" (click)="onCloseAdflex()" class="description">

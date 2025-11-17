@@ -1,7 +1,7 @@
 <div class="projects">
     <div>
         <div class="projects-1" (click)="onOpenMyCloudCam()">
-            <img src="../assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisible}">
+            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisible}">
             <h4>My Cloud Cam</h4>
         </div>
         <div *ngIf="isVisible" (click)="onCloseMyCloudCam()" class="description">A cloud-based camera monitoring platform offering live video streams,
@@ -10,7 +10,7 @@
     </div>
     <div>
         <div class="projects-1" (click)="onOpenDrrived()">
-            <img src="../assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleDrrived}">
+            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleDrrived}">
             <h4>Drrived</h4>
         </div>
         <div *ngIf="isVisibleDrrived" (click)="onCloseDrrived()" class="description">Drrived is a secure, high-performance cloud storage platform that lets users upload,
@@ -18,7 +18,7 @@
     </div>
     <div>
        <div class="projects-1" (click)="onOpenAdflex()"> 
-            <img src="../assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleAdflex}">
+            <img src="assets/images/arrow-downward.svg" alt="arrow-downward" class="project-image" [ngClass]="{'rotate': isVisibleAdflex}">
             <h4>Adflex</h4>
        </div>
         <div *ngIf="isVisibleAdflex" (click)="onCloseAdflex()" class="description">An ad-management and analytics dashboard with dynamic data visualization,
