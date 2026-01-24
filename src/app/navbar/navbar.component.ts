@@ -1,19 +1,23 @@
+import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, CommonModule],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
   menuOpen = false;
+isMobile = window.innerWidth <= 768;
 
   ngOnInit() {
     // Start with menu hidden
-    this.menuOpen = false;
+    if (!this.isMobile) {
+    this.menuOpen = true;
+  }
   }
 
   toggleMenu() {
@@ -25,10 +29,12 @@ export class NavbarComponent {
   }
 
   @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    // Hide mobile menu when switching to desktop
-    if (event.target.innerWidth > 768) {
-      this.menuOpen = false;
-    }
+onResize(event: any) {
+  this.isMobile = event.target.innerWidth <= 768;
+
+  // If desktop, keep menu visible
+  if (!this.isMobile) {
+    this.menuOpen = true;
   }
+}
 }

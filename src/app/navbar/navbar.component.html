@@ -1,8 +1,9 @@
 <nav class="navbar">
 <div class="logo">My Portfolio</div>
 
-<div class="menu-icon" (click)="toggleMenu()">
-   <i class="fa-solid fa-bars"></i>
+<div class="menu-icon" *ngIf="isMobile" (click)="toggleMenu()">
+   <i class="fa-solid fa-bars" *ngIf="!menuOpen"></i>
+   <i class="fa-solid fa-xmark" *ngIf="menuOpen"></i>
   </div>
   <ul [class.active]="menuOpen">
    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>

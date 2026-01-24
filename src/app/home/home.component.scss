@@ -32,24 +32,27 @@ img {
 }
 
 button {
-  color: white; /* text color */
-  background: linear-gradient(45deg, #8b5cf6, #6366f1); /* purple gradient */
+  color: rgb(81, 79, 198); /* text color */
+  background: linear-gradient(white); /* purple gradient */
   font-size: 1rem;
   padding: 0.5rem;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .button {
-  color: white; /* text color */
-  background: linear-gradient(45deg, #8b5cf6, #6366f1); /* purple gradient */
+  color: rgb(81, 79, 198); /* text color */
+  background: linear-gradient(white); /* purple gradient */
   font-size: 1rem;
   padding: 0.5rem;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
   text-decoration: none;
+  font-weight: 500;
 }
 button:hover {
   transform: scale(1.05);
@@ -88,6 +91,17 @@ img:hover {
     font-family: "Poppins", sans-serif;
     margin-left: 0rem;
   }
+
+
+
 }
 
 
+.github-icon {
+  width: 30px;
+  filter: brightness(0) invert(1); /* makes icon white */
+}
+
+.white-img {
+  filter: brightness(0) invert(1);
+}
